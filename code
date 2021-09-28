@@ -1,0 +1,13 @@
+import tkinter as *
+
+def sel:
+    selection = "You Choosed The Option " + str(var.get())
+    label.config(text =selection)
+    
+root = Tk()
+var = IntVar()
+R1 = RadioButton(root, text="Microsoft", variable = var, value=1, command = sel)
+R1.pack( anchor = W)
+label = Label(root)
+label.pack()
+root.mainloop()
